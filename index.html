@@ -1,0 +1,991 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrab -->
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+        <!-- Bootstrab -->
+
+        <!-- Hover Css-->
+        <link rel="stylesheet" type="text/css" href="style/Hover css/hover-min.css">
+        <!-- Hover Css-->
+
+        <!-- Font Awsem -->
+        <script src="js/font-awsem.js"></script>
+        <link rel="stylesheet" href="style/font-awesome.min.css">
+        <!-- Font Awsem -->
+
+        <!-- aos -->
+        <link href="style/aos.css" rel="stylesheet">
+        <!-- aos -->
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- Font Awsem 4.7.0 -->
+        <link rel="stylesheet" type="text/css" href="style/font-awesome.min-4.7.0.css">
+        <!--bootstrap 4 -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+
+
+        <style>
+            p{color: #999;}
+            .small{color: #03B8E5;font-size: 15px;}
+            body{margin:0;padding: 0;overflow: hidden;overflow-y: scroll;}
+            .top{background-color: #1A0E3C;padding: 10px 1px;text-align: center;color: #fff;}
+            *{font-family: 'Cairo', sans-serif;}
+            /* header */
+            header{background: url("img/back.jpg");background-size: cover;}
+            header .bkcolor{background-color: rgba(50,0,50,.5);}
+            nav{height: 70px;justify-content: space-around;display: flex;}
+            .navanim{
+                height: 70px;
+                justify-content: space-around;
+                display: flex;
+                animation-name: anim;
+                animation-duration: 1.2s;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: rgba(2,2,50,.5);
+                z-index: 10;
+            }
+            nav img{height: 65px;margin-top: 5px}
+            nav ul{padding: 0;list-style: none;display: flex;width: 530px;justify-content: space-between;height: 60px;margin-top: 25px;}
+            nav ul li{display: inline-block;}
+            nav ul li a{text-decoration: none;color: white;}
+            nav ul li a:hover{color: #03B8E5;}
+            nav button{padding: 6px 25px;background-color: #03B8E5;border-radius: 15px;border:none;color: white;height: 32px;margin-top: 17px;transition: 1s;}
+            nav button:hover{cursor: pointer;box-shadow: 0 0 5px #03B8E5;}
+            /*.navphone{
+                
+            }
+            .navitem{
+                
+            }*/
+            .half{width: 50%;display: inline-block;}
+            header h1{font-size: 50px;margin-top: 130px;font-family: 'Rowdies', cursive;color:#fff;}
+            header .half{margin-left: 50px;width: 70%;}
+
+            header .half p{color: white;line-height: 20px;}
+
+            header .half button{padding: 6px 35px;background-color: #1A0E3C;border-radius: 30px;border:1px #fff solid;color: white;height: 40px;margin-top: 17px;}
+            header .all-wid{
+                margin-right: 50px;margin-left: 50px;height: 130px;
+                display: grid;
+                grid-template-columns: 75% 25%;
+                grid-column-gap: 20px;
+                position: relative;
+                bottom: -50px;
+            }
+            header .bl{
+                border-radius: 20px;background-color: #03B8E5; 
+                height: 130px;
+            }
+            header .bl .cut{display: grid;
+                grid-template-columns: auto auto auto;}
+            header .bl .si{padding: 11px; color: #fff;}
+            header .bl .si i{display: block;height: 100%;width: 20%;margin-top: 15px;}
+            header .bl .si h5{margin: 0;margin-bottom: 10px;}
+            header .bl .si p{font-size: 10px;line-height: 20px;color: #fff;}
+            .bl .si .gri{display: grid;grid-template-columns: auto auto;grid-column-gap: 10px;}
+            .bl .si .gri .ss{margin-top: 15px;}
+            header .pur{background-color: #1A0E3C;color: #fff;border-radius: 20px;padding: 10px;height: 110px;text-align: center;}
+            header .pur p{font-size: 10px;color: #fff;}
+            header .pur h4{margin: 0;font-size: 15px;margin: 15px auto;}
+            header .pur h5{margin: 0;display: inline-block;}
+            
+            @keyframes anim{
+                from{
+                    position: fixed;
+                    top: -100px;
+                }
+                to{
+                    position: fixed;
+                    background-color: rgba(2,2,50,.5);
+                    top: 0;
+                    width: 100%;
+                }
+            }
+            /* header */
+
+            /* about */
+            .about-us{padding-top: 70px;padding-bottom: 50px;}
+            .spac{margin-right: 50px;margin-left: 50px;}
+            .about-us .small{color: #03B8E5;}
+            .about-us h2{font-size:40px;margin-top: 15px;margin-bottom: 15px;color: #1A0E3C;}
+            .about-us .check{}
+            .about-us .check i{color: #03B8E5;margin-right: 10px;}
+            .about-us .box{padding: 10px;color: #555;margin-bottom: 0;}
+            .about-us button{padding: 6px 25px;background-color: #03B8E5;border-radius: 15px;border:none;color: white;height: 32px;margin-top: 17px;}
+
+            .about-us img{width: 49%;margin-bottom: 30px;}
+            /* about */
+
+            /* Services */
+            .services{
+                text-align: center;
+                padding-bottom: 120px;
+            }
+            .services h2{color:#1A0E3C;}
+            .services > p{margin-bottom: 60px;}
+            .services .small{color: #03B8E5;font-size: 15px;margin-bottom: 10px;}
+            .services .carts{margin-right: 50px;margin-left: 50px;display: grid;grid-template-columns: auto auto auto; grid-gap: 50px;text-align: left;}
+            .services .carts .cart{}
+            .services .carts .cart img{width: 100%;border-radius: 10px;}
+            .services .carts .cart h4{color:#1A0E3C;margin-top: 13px;margin-bottom: 13px;}
+            .services .carts .cart p{font-size: 12px;line-height: 20px;}
+            .services .carts .cart .nex{font-size: 12px;color:#1A0E3C;}
+            /* Services */
+
+            /* price */
+            .price{background: url("img/wall.png");position: relative;}
+            .price .bcolor{padding-top: 50px;padding-bottom:50px; background-color: rgba(5,5,5,.8);}
+            .price .bcolor .half{width: 40%;display: inline-block;margin-left: 50px;}
+            .price .bcolor h2{color:#03B8E5;}
+            .price .bcolor .ima{width: 40%;display: inline-block;position: absolute;bottom: 0;right: 20px;margin-right: 50px;}
+            .price .bcolor img{width: 100%;height: auto;}
+            /* price */
+
+            /* process */
+            .process{text-align: center;padding-top: 50px;padding-bottom: 50px;background-color: #F3FBFE;}
+            .process h2{color:#1A0E3C;}
+            .process p{width: 80%;margin: auto; font-size: 12px;line-height: 20px;}
+            .process .row{display: grid;grid-template-columns: auto auto auto;grid-gap: 30px;margin-right: 50px;margin-left: 50px;margin-top: 50px;}
+            .process .row .cara .ima{width: 70%;margin: auto;}
+            .process .row .cara .ima img{width: 40%;}
+            .process .row .cara{background-color: #fff;position: relative;box-shadow: 0 0 5px #999;}
+            .process .row .cara{padding: 25px;}
+            .process .row .cara .num{position: absolute;background-color:#03B8E5;border-radius: 50%;top: 5px;right: 10px;color: #fff;height: 30px;width: 30px;}
+            .process .row .cara .num div{height: 30px;width: 30px;margin-top: 4px;}
+            .process .row .cara h4{color: #1A0E3C;margin-top: 15px;margin-bottom: 10px;}
+            .process .row .cara .nex{color: #1A0E3C;margin-top: 20px; font-size: 12px;}
+
+
+            /* process */
+
+            /* prevent */
+            .prevent{}
+            .prevent .half{margin-left: 50px;display: inline-block;width: 50%;}
+            .prevent .half h2{color: #1A0E3C;margin-top: 10px;margin-bottom: 10px;}
+            .prevent .half .full{display: grid;grid-template-columns: 10% 90%;grid-column-gap: 10px;}
+            .prevent .half .ic{display: inline-block;width: 11%;}
+            .prevent .half .hol{display: inline-block;width: 79%;}
+            .prevent .half .hol p{margin-top: 5px;font-size: 12px;}
+            .prevent .half span{color: #1A0E3C;}
+            .prevent .half i{color: #03B8E5;font-size: 45px;}
+
+            .prevent img{width: 44%;}
+            /* prevent */
+
+            /* R-side */
+            .r-side {position: relative;margin-bottom: 40px;margin-top: 70px;}
+            .r-side img{margin-left: 50px;}
+            .r-side .t-box{position: absolute;background-color: #1A0E3C;padding: 40px;width: 50%;top: 50%;right: 70px;transform: translateY(-50%);}
+            .r-side .t-box h2{color: #fff;}
+            .r-side .t-box p{font-size: 12px; line-height: 20px;margin: 0;}
+            /* R-side */
+
+            /* L-Side */
+            .l-side {position: relative;margin-bottom: 70px;margin-top: 40px;}
+            .l-side .a{position: absolute;right: 70px;}
+            .l-side .t-box{position: absolute;background-color: #1A0E3C;padding: 40px;width: 50%;top: 50%;left: 70px;transform: translateY(-50%);z-index: 5;}
+            .l-side .t-box h2{color: #fff;}
+            .l-side .t-box p{font-size: 12px; line-height: 20px;margin: 0;}
+            /* L-side */
+
+            /* Faq */
+            .faq{text-align: center;padding-bottom: 50px;}
+            .faq .all-side{display: grid;grid-template-columns: 50% 50%;}
+            .faq p{width: 100%;margin: auto;font-size: 12px;padding-top: 20px;padding-bottom: 20px;}
+            .faq > p{width: 70%;padding-top: 10px;padding-bottom: 10px;}
+            .faq h2{color: #1A0E3C;margin-top: 10px;margin-bottom: 10px;}
+            .faq .ima{display: inline-block;width: 40%;text-align: left;margin-left: 50px;}
+            .faq .ima img{}
+            .faq .side-2{display: inline-block;text-align: left;margin-right: 50px;}
+            .faq .side-2 .ques .add {color: #1A0E3C;}
+            .faq .side-2 .ques .add i{font-size: 20px;vertical-align: sub;margin-left: 150px;color: #000;}
+            .faq .side-2 .ques .add i:hover{cursor: pointer;opacity: .8;}
+            .faq .side-2 .ans{display: none;padding-top: 0;}
+            /* Faq */
+
+            /* Call */
+            .call{text-align: center;background: url("img/back_2.jpg");background-size: cover;}
+            .call .bcolor{background-color: rgba(25,2,50,.8);padding-top: 50px;padding-bottom: 50px;}
+            .call .p{}
+            .call .bcolor h2{color: #fff;}
+            .call .form{margin-right:50px;display: grid;grid-template-columns: auto auto auto;margin-left:50px;grid-column-gap: 20px;grid-row-gap: 30px;}
+            .call .form .sam {color: #03B8E5;position: relative;}
+            .call .form .sam i{color: #03B8E5;position: absolute;right: 20px;top: 11px;}
+            .call .form input{background-color: rgba(200,200,200,.2);padding: 10px;border:1px #fff solid;border-radius: 20px;color: white;width: 100%;}
+            .call .form button{grid-column-start:2;grid-column-end: 3;padding: 15px;background-color: #03B8E5;border: none;border-radius: 50px;margin: auto 30px;color: #fff;}
+            /* Call */
+
+            /* Up-date*/
+            .up-date{
+                text-align: center;
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            .up-date h2{color: #1A0E3C;}
+            .up-date > p{font-size: 13px;margin-bottom: 50px;}
+            .up-date .carts{margin-right: 50px;margin-left: 50px;display: grid; grid-template-columns: auto auto auto; grid-column-gap: 20px;}
+            .up-date .cart{}
+            .up-date .cart img{width: 100%;border-radius: 20px 20px 0 0;}
+            .up-date .cart .all-text{padding: 15px;text-align: left;}
+            .up-date .cart .all-text .b-t{color: #03B8E5;}
+            .up-date .cart .all-text .more{color: #1A0E3C;font-size: 12px;}
+            .up-date .cart .all-text .art{font-size: 12px;}
+            .up-date .cart .all-text .tex{color: #1A0E3C;font-size: 18px;}
+            /* Up-date*/
+
+            /* clints */
+            .client{padding: 40px;background-color: #F2F2F2;height: 80px;}
+            .client .all-client{margin-right: 50px;margin-left: 50px;display: grid;grid-template-columns: auto auto auto auto auto; height: 100%;}
+            .client .all-client img{height: 100%;width: auto;}
+
+            /* clints */
+
+            /* Footer */
+            footer{background: url("img/back_3.jpg");}
+            footer .bcolor{background-color: rgba(25,2,50,.8);padding-top: 70px;padding-bottom: 50px;}
+            footer .bcolor .gri{display: grid;grid-template-columns: 20% 80%;margin-left: 50px; margin-right: 50px;grid-gap: 50px;}
+            footer .bcolor .gri .main{}
+            footer .bcolor .gri .main img{width: 90%;}
+            footer .bcolor .gri .main .cont{}
+            footer .bcolor .gri .main .cont span{height: 15px;width: 15px;background-color: #03B8E5;padding: 6px;border-radius: 50%;}
+            footer .bcolor .gri .main .cont span div{height: 18px;width: 18px;display: inline-block;}
+            footer .bcolor .gri .main .cont i{color: white;}
+            footer .bcolor .gri .loop{display: grid;grid-template-columns: 25% 25% 25% 25%;}
+            footer .bcolor .gri .loop .ite{}
+            footer .bcolor .gri .loop .ite h4{color: #fff;font-size: 25px;margin-top: 0;}
+            footer .bcolor .gri .loop .ite p{color: #fff;font-size: 12px;margin-top: 30px;margin-bottom: 30px;}
+            footer .bcolor .gri .loop .ite p i{color: #03B8E5;margin-right: 10px;}
+            footer .bcolor .gri .loop .ite .lay{display: grid;grid-template-columns: 15% 85%;margin-top:40px;margin-bottom: 20px;}
+            footer .bcolor .gri .loop .ite .lay .las{grid-column-start: 2;grid-column-end: 3;}
+            footer .bcolor .gri .loop .ite .lay p{margin: 0;}
+            footer .bcolor .gri .loop .ite .lay i{color: #03B8E5;}
+            footer .bottom{text-align: center;color: #fff;padding: 15px;background-color: #05224C;}
+            /* Footer */
+            
+/* Responsive */
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+}
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width : 321px) {
+    /*Work*/
+
+}
+
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width : 320px) {
+    
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    #res{display: none;}
+    /*Work on computer*/
+    
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen  and (min-width : 1224px) {
+    
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+    
+}
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+        </div>
+
+        <header>
+            <div class="bkcolor">
+                <nav id="navb">
+                    <img src="img/logo.png" alt="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Navigate</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Coronavirus Test</a></li>
+                        <li><a href="#">Hygiene Test</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <button>Get Quite</button>
+                    <i id="res" class="fas fa-align-justify"></i>
+                </nav>
+                
+                <!-- Phone navbar -->
+                <!--<nav class="navphone">
+                    <i class="fas fa-align-justify"></i>
+                    <div class="navitem">
+                        <img src="img/logo.png" alt="logo">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Navigate</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Coronavirus Test</a></li>
+                            <li><a href="#">Hygiene Test</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <button>Get Quite</button>
+                    </div>
+                </nav>-->
+                <!-- Phone navbar -->
+
+                <div class="half">
+                    <h1>Cleaning And Disinfecting Your Area</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+                    <button>Read more</button>
+                </div>
+
+                <div class="all-wid">
+                    <div class="bl">
+                        <div class="cut">
+                            <div class="si">
+                                <div class="gri">
+                                    <i class="fas fa-cube fa-3x"></i>
+                                    <div class="ss">
+                                        <h5>Satisfaction</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="si">
+                                <div class="gri">
+                                    <i class="fas fa-cube fa-3x"></i>
+                                    <div class="ss">
+                                        <h5>Satisfaction</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="si">
+                                <div class="gri">
+                                    <i class="fas fa-cube fa-3x"></i>
+                                    <div class="ss">
+                                        <h5>Satisfaction</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pur">
+                        <p>Hot Line</p>
+                        <i class="fas fa-cube"></i>
+                        <h5>Contact Us!<h5>
+                        <h4>1-408-230-662</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-us">
+            <div class="spac">
+                <div class="half">
+                    <p class="small">About Us</p>
+                    <h2>Covid - 19 Virus Disinfection & Sanitation</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</p>
+
+                    <p class="check">
+                        <i class="far fa-check-square"></i>Clean and disinfect
+                    </p>
+
+                    <p class="check">
+                        <i class="far fa-check-square"></i>tempor incididunt ut labore et dolore magna aliqua.
+                    </p> 
+
+                    <p class="check">
+                        <i class="far fa-check-square"></i>ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+
+                    <p class="check">
+                        <i class="far fa-check-square"></i>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                    </p>
+                    <p class="box">
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation 
+                    </p>
+                    <button>Read More</button>
+                </div>
+                <img src="img/hand.jpg.png">
+            </div>
+        </section>
+
+        <section class="services">
+            <p class="small">Services</p>
+            <h2>Profissional Disinfecting Services</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur eiusmod tempor incididunt eiusmod tempor incididunt <br>adipisicing elit, sed do eiusmod tempor incididunt veiusmod tempor incididunt
+
+            </p>
+            <div class="carts">
+                <div class="cart">
+                    <img src="img/clean.png" alt="">
+                    <h4>Electronic Difintion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    </p>
+                    <div class="nex">Read More +</div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/clean.png" alt="">
+                    <h4>Electronic Difintion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    </p>
+                    <div class="nex">Read More +</div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/clean.png" alt="">
+                    <h4>Electronic Difintion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    </p>
+                    <div class="nex">Read More +</div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/clean.png" alt="">
+                    <h4>Electronic Difintion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    </p>
+                    <div class="nex">Read More +</div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/clean.png" alt="">
+                    <h4>Electronic Difintion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    </p>
+                    <div class="nex">Read More +</div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/clean.png" alt="">
+                    <h4>Electronic Difintion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    </p>
+                    <div class="nex">Read More +</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price">
+            <div class="bcolor">
+                <div class="half">
+                    <h2>Our Low-Price Guarantee</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="ima">
+                    <img src="img/man.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <p class="small">Process</p>
+            <h2>How It Works</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+
+            <div class="row">
+                <div class="cara">
+                    <div class="ima">
+                        <img src="img/ico.png" alt="img">
+                    </div>
+                    <div class="num"><div>01</div></div>
+                    <h4>Account & Checkup</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                    <div class="nex">get in touch +</div>
+                </div>
+
+                <div class="cara">
+                    <div class="ima">
+                        <img src="img/ico.png" alt="img">
+                    </div>
+                    <div class="num"><div>02</div></div>
+                    <h4>Choose Catagery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod</p>
+                    <div class="nex">get in touch +</div>
+                </div>
+
+                <div class="cara">
+                    <div class="ima">
+                        <img src="img/ico.png" alt="img">
+                    </div>
+
+                    <div class="num"><div>03</div></div>
+                    <h4>Get Clean</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                    <div class="nex">get in touch +</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent">
+            <div class="row">
+                <div class="half">
+                    <p class="small">Prevent</p>
+                    <h2>Protect Your Self from Virus</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    </p>
+
+                    <div class="full">
+                        <div class="ic">
+                            <i class="fas fa-caret-square-right"></i>
+                        </div>
+                        <div class="hol">
+                            <div class="tit">Avoid touching</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="full">
+                        <div class="ic">
+                            <i class="fas fa-caret-square-right"></i>
+                        </div>
+                        <div class="hol">
+                            <div class="tit">Wash Glov</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="full">
+                        <div class="ic">
+                            <i class="fas fa-caret-square-right"></i>
+                        </div>
+                        <div class="hol">
+                            <div class="tit">Wash Your Hand</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="full">
+                        <div class="ic">
+                            <i class="fas fa-caret-square-right"></i>
+                        </div>
+                        <div class="hol">
+                            <div class="tit">Wash Your Hand</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--<div class="ima">-->
+                    <img src="img/coro.png">
+                <!--</div>-->
+
+            </div>
+        </section>
+
+        <section class="r-side">
+            <img src="img/r-side.png" alt="text">
+            <div class="t-box">
+                <p class="small">PATENT PENDING TRIPlE PROTUCTION</p>
+                <h2>SARS-COV-2, COVID-19 Environmental Protection - Keep Me COVID Safe</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </p><br>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                </p>
+            </div>
+        </section>
+
+        <section class="l-side">
+
+            <div class="t-box">
+                <p class="small">PATENT PENDING TRIPlE PROTUCTION</p>
+                <h2>SARS-COV-2, COVID-19 Environmental Protection - Keep Me COVID Safe</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </p><br>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                </p>
+            </div>
+            <img src="img/r-side.png" alt="text" style="visibility: hidden;">
+            <img src="img/l-side.png" alt="text" class="a">
+        </section>
+
+        <section class="faq">
+            <p class="small">FAQs</p>
+            <h2>Frequently Asked Quistions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+            <div class="all-side">
+                <div class="ima">
+                    <img src="img/planet.png">
+                    
+                </div>
+                <div class="side-2">
+                    <div class="ques">
+                        <p class="add">Additional Key Times To Clean Hands
+                            <i class="fas fa-chevron-right fa-rotate-90" id="cr1"></i>
+                        </p>
+                        <p class="ans"  id="an1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+
+                    <div class="ques">
+                        <p class="add">Additional Key Times To Clean Hands
+                            <i class="fas fa-chevron-right fa-rotate-90" id="cr2"></i>
+                        </p>
+                        <p class="ans"  id="an2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+
+                    <div class="ques">
+                        <p class="add">Additional Key Times To Clean Hands
+                            <i class="fas fa-chevron-right fa-rotate-90" id="cr3"></i>
+                        </p>
+                        <p class="ans"  id="an3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+
+                    <div class="ques">
+                        <p class="add">Additional Key Times To Clean Hands
+                            <i class="fas fa-chevron-right fa-rotate-90" id="cr4"></i>
+                        </p>
+                        <p class="ans" id="an4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+
+                    <div class="ques">
+                        <p class="add">Additional Key Times To Clean Hands
+                            <i class="fas fa-chevron-right fa-rotate-90" id="cr5"></i>
+                        </p>
+                        <p class="ans"  id="an5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call">
+            <div class="bcolor">
+                <p class="small">Call To Action</p>
+                <h2>Make An Appointment</h2>
+                <div class="form">
+                    <div class="sam">
+                        <i class="fas fa-user"></i>
+                        <input type="text"placeholder="Enter Your Name" name="">
+                    </div>
+                    <div class="sam">
+                        <i class="far fa-envelope"></i>
+                        <input type="text"placeholder="Enter Your Email" name="">
+                    </div>
+                    <div class="sam">
+                        <i class="fas fa-mobile-alt"></i>
+                        <input type="text"placeholder="Enter Phone" name="">
+                    </div>
+                    <div class="sam">
+                        <i class="fas fa-chevron-right"></i>
+                        <input type="text"placeholder="Select Service" name="">
+                    </div>
+                    <div class="sam">
+                        <i class="fas fa-chevron-right"></i>
+                        <input type="text"placeholder="Select Date" name="">
+                    </div>
+                    <div class="sam">
+                        <i class="fas fa-chevron-right"></i>
+                        <input type="text"placeholder="Select Time" name="">
+                    </div>
+                    <button>Send Request</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="up-date">
+            <p class="small">Call To Action</p>
+            <h2>Our Latest News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in</p>
+
+            <div class="carts">
+                <div class="cart">
+                    <img src="img/try.jpg">
+                    <div class="all-text">
+                        <p class="b-t">Admin | 32/07/2020</p>
+                        <p class="tex">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <p class="art">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        <p class="more">Read More +</p>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="img/try.jpg">
+                    <div class="all-text">
+                        <p class="b-t">Admin | 32/07/2020</p>
+                        <p class="tex">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <p class="art">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        <p class="more">Read More +</p>
+                    </div>
+                </div>
+                <div class="cart">
+                        <img src="img/try.jpg">
+                    <div class="all-text">
+                        <p class="b-t">Admin | 32/07/2020</p>
+                        <p class="tex">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <p class="art">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        <p class="more">Read More +</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="client">
+            <div class="all-client">
+                <img src="img/google.png">
+                <img src="img/fox.png">
+                <img src="img/amazon.png">
+                <img src="img/hp.png">
+                <img src="img/mac.png">
+            </div>
+        </section>
+
+        <footer>
+            <div class="bcolor">
+                <div class="gri">
+                    <div class="main">
+                        <img src="img/logo.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                        <div class="cont">
+                            <span><div><i class="fab fa-facebook-f"></div></i></span>
+                            <span><div><i class="fab fa-twitter"></i></div></span>
+                            <span><div><i class="fab fa-instagram"></i></div></span>
+                            <span><div><i class="fab fa-linkedin-in"></i></div></span>
+                            <span><div><i class="fab fa-youtube"></i></div></span>
+                        </div>
+                    </div>
+                    <div class="loop">
+                        <div class="ite">
+                            <h4>Our Srvices</h4>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                        </div>
+                        <div class="ite">
+                            <h4>Information</h4>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+               
+                        </div>
+                        <div class="ite">
+                            <h4>Quick Links</h4>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            <p><i class="fas fa-caret-right"></i>Office Dissic</p>
+                            
+                        </div>
+                        <div class="ite">
+                            <h4>Get In Touch</h4>
+                            <div class="lay">
+                                <i class="fas fa-phone-volume"></i>
+                                <p>Hot Line</p>
+                                <p class="las">Phone: 01-226-505-9200</p>
+                            </div>
+                            <div class="lay">
+                                <i class="far fa-envelope"></i>
+                                <p>Mail:</p>
+                                <p class="las">hello@gmail.com</p>
+                            </div>
+                            <div class="lay">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Address</p>
+                                <p class="las">388 Mark street, san Fransisco Ca 19777</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="bottom">Copy Right 2020. All Right Reversed</section>
+        </footer>
+
+
+
+        
+        <!-- Jquery -->
+
+        <script src="js/jquery.min.js"></script>
+        <!-- Jquery -->
+
+        <!-- aos -->
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            window.onscroll = function(){animate();}
+            function animate(){
+                if(document.body.scrollTop > 200){
+                    document.getElementById("navb").className = "navanim";
+                }
+                else{
+                    document.getElementById("navb").className = "";
+                }
+            }
+            
+            $(document).ready(function(){
+                $("#cr1").click(function(){
+                    $("#an1").slideToggle("slow")
+
+                    $("#an2").slideUp("slow")
+                    $("#an3").slideUp("slow")
+                    $("#an4").slideUp("slow")
+                    $("#an5").slideUp("slow")
+                });
+
+                $("#cr2").click(function(){
+                    $("#an2").slideToggle("slow")
+
+                    $("#an1").slideUp("slow")
+                    $("#an3").slideUp("slow")
+                    $("#an4").slideUp("slow")
+                    $("#an5").slideUp("slow")
+                });
+
+                $("#cr3").click(function(){
+                    $("#an3").slideToggle("slow")
+
+                    $("#an2").slideUp("slow")
+                    $("#an1").slideUp("slow")
+                    $("#an4").slideUp("slow")
+                    $("#an5").slideUp("slow")
+                });
+
+                $("#cr4").click(function(){
+                    $("#an4").slideToggle("slow")
+
+                    $("#an2").slideUp("slow")
+                    $("#an3").slideUp("slow")
+                    $("#an1").slideUp("slow")
+                    $("#an5").slideUp("slow")
+                });
+
+                $("#cr5").click(function(){
+                    $("#an5").slideToggle("slow")
+
+                    $("#an2").slideUp("slow")
+                    $("#an3").slideUp("slow")
+                    $("#an4").slideUp("slow")
+                    $("#an1").slideUp("slow")
+                });
+            });
+                
+            
+        </script>
+        <!-- aos -->
+    </body>
+</html>
